@@ -1,0 +1,13 @@
+timestamp,user,device,event_type,source_ip,status
+2026-10-08 09:01:12,Rahul,Laptop-01,Login,192.168.1.10,Failed
+2026-10-08 09:01:18,Rahul,Laptop-01,Login,192.168.1.10,Failed
+2026-10-08 09:01:25,Rahul,Laptop-01,Login,192.168.1.10,Failed
+2026-10-08 09:02:01,Rahul,Laptop-01,Login,192.168.1.10,Success
+2026-10-08 09:03:15,Rahul,Laptop-01,File_Access,192.168.1.10,Sensitive
+2026-10-08 09:04:22,Rahul,Laptop-01,Network_Connection,192.168.1.10,Internal
+2026-10-08 09:05:10,Rahul,Laptop-01,Privilege_Change,192.168.1.10,Attempted
+2026-10-08 09:06:45,Priya,Desktop-02,Login,192.168.1.20,Success
+2026-10-08 09:07:10,Priya,Desktop-02,File_Access,192.168.1.20,Normal
+2026-10-08 09:08:30,Arjun,Laptop-03,Login,192.168.1.30,Success
+2026-10-08 09:09:15,Arjun,Laptop-03,Network_Connection,192.168.1.30,Internal
+2026-10-08 09:10:05,Arjun,Laptop-03,File_Access,192.168.1.30,Normal

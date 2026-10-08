@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CyberDNA | Security Dashboard</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- NAVIGATION -->
+
+    <nav class="navbar">
+
+        <div class="logo">
+            <span>CYBER</span>DNA
+        </div>
+
+        <div class="nav-links">
+
+            <a href="index.html">Home</a>
+
+            <a href="dashboard.html">Dashboard</a>
+
+            <a href="#">Log Analysis</a>
+
+            <a href="#">Attack Patterns</a>
+
+            <a href="#">Predictions</a>
+
+            <a href="#">Reports</a>
+
+        </div>
+
+    </nav>
+
+
+    <!-- DASHBOARD -->
+
+    <main class="dashboard">
+
+        <div class="dashboard-header">
+
+            <div>
+
+                <div class="badge">
+                    ● SECURITY ANALYTICS
+                </div>
+
+                <h1>
+                    Security Dashboard
+                </h1>
+
+                <p>
+                    Monitor security events, detect behavioral patterns,
+                    and identify possible attack progression.
+                </p>
+
+            </div>
+
+            <button class="primary-btn">
+                + NEW ANALYSIS
+            </button>
+
+        </div>
+
+
+        <!-- STATISTICS -->
+
+        <section class="stats-grid">
+
+            <div class="stat-card">
+
+                <span class="stat-title">
+                    TOTAL EVENTS
+                </span>
+
+                <strong>
+                    1,284
+                </strong>
+
+                <small>
+                    Security events analyzed
+                </small>
+
+            </div>
+
+
+            <div class="stat-card">
+
+                <span class="stat-title">
+                    THREATS DETECTED
+                </span>
+
+                <strong class="danger">
+                    18
+                </strong>
+
+                <small>
+                    Suspicious patterns found
+                </small>
+
+            </div>
+
+
+            <div class="stat-card">
+
+                <span class="stat-title">
+                    HIGH RISK
+                </span>
+
+                <strong class="warning-text">
+                    7
+                </strong>
+
+                <small>
+                    High-risk activities
+                </small>
+
+            </div>
+
+
+            <div class="stat-card">
+
+                <span class="stat-title">
+                    AVG RISK SCORE
+                </span>
+
+                <strong class="blue-text">
+                    64
+                </strong>
+
+                <small>
+                    Current environment risk
+                </small>
+
+            </div>
+
+        </section>
+
+
+        <!-- MAIN ANALYSIS -->
+
+        <section class="dashboard-grid">
+
+
+            <!-- ATTACK DETECTION -->
+
+            <div class="dashboard-card large-card">
+
+                <div class="card-title-row">
+
+                    <div>
+
+                        <span class="card-label">
+                            BEHAVIORAL ANALYSIS
+                        </span>
+
+                        <h2>
+                            Attack Pattern Detected
+                        </h2>
+
+                    </div>
+
+                    <span class="high-risk">
+                        HIGH RISK
+                    </span>
+
+                </div>
+
+
+                <!-- RISK -->
+
+                <div class="risk-display">
+
+                    <div>
+
+                        <small>
+                            RISK SCORE
+                        </small>
+
+                        <div class="risk-number">
+                            87
+                            <span>/100</span>
+                        </div>
+
+                    </div>
+
+
+                    <div class="confidence">
+
+                        <small>
+                            MODEL CONFIDENCE
+                        </small>
+
+                        <strong>
+                            87%
+                        </strong>
+
+                    </div>
+
+                </div>
+
+
+                <!-- ATTACK PATH -->
+
+                <div class="attack-path">
+
+                    <div class="path-stage completed">
+
+                        <div class="stage-circle">
+                            ✓
+                        </div>
+
+                        <span>
+                            Initial Access
+                        </span>
+
+                    </div>
+
+
+                    <div class="path-line"></div>
+
+
+                    <div class="path-stage completed">
+
+                        <div class="stage-circle">
+                            ✓
+                        </div>
+
+                        <span>
+                            Credential Access
+                        </span>
+
+                    </div>
+
+
+                    <div class="path-line"></div>
+
+
+                    <div class="path-stage current">
+
+                        <div class="stage-circle">
+                            ●
+                        </div>
+
+                        <span>
+                            Lateral Movement
+                        </span>
+
+                    </div>
+
+
+                    <div class="path-line"></div>
+
+
+                    <div class="path-stage predicted">
+
+                        <div class="stage-circle">
+                            ?
+                        </div>
+
+                        <span>
+                            Privilege Escalation
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <!-- PREDICTION -->
+
+                <div class="prediction-box">
+
+                    <div class="prediction-icon">
+                        ⚠
+                    </div>
+
+                    <div>
+
+                        <small>
+                            POSSIBLE NEXT ATTACK STAGE
+                        </small>
+
+                        <strong>
+                            Privilege Escalation
+                        </strong>
+
+                        <p>
+                            Based on the observed sequence of authentication,
+                            file-access and internal-network events.
+                        </p>
+
+                    </div>
+
+                    <b>
+                        87%
+                    </b>
+
+                </div>
+
+            </div>
+
+
+            <!-- WHY ALERT -->
+
+            <div class="dashboard-card">
+
+                <span class="card-label">
+                    EXPLAINABLE AI
+                </span>
+
+                <h2>
+                    Why this alert?
+                </h2>
+
+                <div class="reason">
+
+                    <span>01</span>
+
+                    <p>
+                        Multiple failed login attempts were followed
+                        by a successful authentication.
+                    </p>
+
+                </div>
+
+
+                <div class="reason">
+
+                    <span>02</span>
+
+                    <p>
+                        Sensitive file access occurred shortly after login.
+                    </p>
+
+                </div>
+
+
+                <div class="reason">
+
+                    <span>03</span>
+
+                    <p>
+                        An unusual internal network connection was detected.
+                    </p>
+
+                </div>
+
+
+                <div class="reason">
+
+                    <span>04</span>
+
+                    <p>
+                        The sequence matches a suspicious attack pattern.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- EVENTS -->
+
+        <section class="dashboard-card events-card">
+
+            <div class="card-title-row">
+
+                <div>
+
+                    <span class="card-label">
+                        SECURITY EVENTS
+                    </span>
+
+                    <h2>
+                        Recent Activity
+                    </h2>
+
+                </div>
+
+                <button class="secondary-btn">
+                    VIEW ALL
+                </button>
+
+            </div>
+
+
+            <div class="table-container">
+
+                <table>
+
+                    <thead>
+
+                        <tr>
+
+                            <th>
+                                TIME
+                            </th>
+
+                            <th>
+                                USER
+                            </th>
+
+                            <th>
+                                EVENT
+                            </th>
+
+                            <th>
+                                SOURCE
+                            </th>
+
+                            <th>
+                                SEVERITY
+                            </th>
+
+                            <th>
+                                STATUS
+                            </th>
+
+                        </tr>
+
+                    </thead>
+
+
+                    <tbody>
+
+                        <tr>
+
+                            <td>
+                                10:07
+                            </td>
+
+                            <td>
+                                Rahul
+                            </td>
+
+                            <td>
+                                Internal Network Connection
+                            </td>
+
+                            <td>
+                                192.168.1.20
+                            </td>
+
+                            <td>
+                                <span class="severity-high">
+                                    HIGH
+                                </span>
+                            </td>
+
+                            <td>
+                                Suspicious
+                            </td>
+
+                        </tr>
+
+
+                        <tr>
+
+                            <td>
+                                10:05
+                            </td>
+
+                            <td>
+                                Rahul
+                            </td>
+
+                            <td>
+                                Sensitive File Access
+                            </td>
+
+                            <td>
+                                192.168.1.20
+                            </td>
+
+                            <td>
+                                <span class="severity-high">
+                                    HIGH
+                                </span>
+                            </td>
+
+                            <td>
+                                Suspicious
+                            </td>
+
+                        </tr>
+
+
+                        <tr>
+
+                            <td>
+                                10:03
+                            </td>
+
+                            <td>
+                                Rahul
+                            </td>
+
+                            <td>
+                                Successful Login
+                            </td>
+
+                            <td>
+                                192.168.1.20
+                            </td>
+
+                            <td>
+                                <span class="severity-medium">
+                                    MEDIUM
+                                </span>
+                            </td>
+
+                            <td>
+                                Observed
+                            </td>
+
+                        </tr>
+
+
+                        <tr>
+
+                            <td>
+                                10:01
+                            </td>
+
+                            <td>
+                                Rahul
+                            </td>
+
+                            <td>
+                                Failed Login
+                            </td>
+
+                            <td>
+                                192.168.1.20
+                            </td>
+
+                            <td>
+                                <span class="severity-medium">
+                                    MEDIUM
+                                </span>
+                            </td>
+
+                            <td>
+                                Observed
+                            </td>
+
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+    <footer>
+
+        <div class="logo">
+            <span>CYBER</span>DNA
+        </div>
+
+        <p>
+            AI-Powered Predictive Cyberattack Early-Warning System
+        </p>
+
+    </footer>
+
+<h2>Security Logs</h2>
+
+<table border="1" width="100%" id="logsTable">
+    <thead>
+        <tr>
+            <th>User</th>
+            <th>Event</th>
+            <th>Status</th>
+            <th>Device</th>
+            <th>Source IP</th>
+            <th>Timestamp</th>
+        </tr>
+    </thead>
+
+    <tbody id="logsBody">
+        <tr>
+            <td colspan="6">Loading security logs...</td>
+        </tr>
+    </tbody>
+</table>
+
+<script>
+async function loadLogs() {
+    try {
+        const response = await fetch("http://127.0.0.1:5000/api/logs");
+        const data = await response.json();
+
+        const logsBody = document.getElementById("logsBody");
+
+        logsBody.innerHTML = "";
+
+        data.logs.forEach(log => {
+            const row = document.createElement("tr");
+
+            row.innerHTML = `
+                <td>${log.user}</td>
+                <td>${log.event_type}</td>
+                <td>${log.status}</td>
+                <td>${log.device}</td>
+                <td>${log.source_ip}</td>
+                <td>${log.timestamp}</td>
+            `;
+
+            logsBody.appendChild(row);
+        });
+
+    } catch (error) {
+        console.error("Error loading logs:", error);
+
+        document.getElementById("logsBody").innerHTML = `
+            <tr>
+                <td colspan="6">Unable to load security logs.</td>
+            </tr>
+        `;
+    }
+}
+
+loadLogs();
+</script>
+</body>
+</html>
